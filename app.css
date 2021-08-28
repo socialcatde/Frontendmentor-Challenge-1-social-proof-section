@@ -1,0 +1,170 @@
+body {
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: hsl(300, 43%, 22%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  max-width: 400px;
+  margin: auto;
+  padding: 10vh 19px;
+  background-image: url(images/bg-pattern-top-mobile.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top left, bottom left;
+  background-color: hsl(0, 0%, 100%);
+}
+
+header {
+  margin-bottom: 38px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 33px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.rating {
+  background-color: hsl(300, 24%, 96%);
+  margin-bottom: 15px;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 14px 0;
+}
+
+.ratingbox {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.star {
+  margin: 2px 2px 10px 2px;
+}
+
+.testimonial {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  text-align: left;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  padding: 35px 33px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.namebox {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.portrait {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  margin-right: 20px;
+}
+
+.nameandlabel {
+  font-weight: 700;
+}
+
+.verified {
+  font-weight: 300;
+  color: hsl(333, 80%, 67%);
+}
+
+@media (min-width: 1089px) {
+  body {
+    max-width: 1140px;
+    background-image: url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 73vh;
+    background-position: top left, bottom right;
+  }
+
+  .positionbox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header {
+    max-width: 450px;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .ratingbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 410px;
+    padding: 20px 0 20px 35px;
+  }
+
+  .rating p {
+    margin-left: 30px;
+    padding-top: 7px;
+  }
+
+  .star {
+    margin-bottom: 0;
+  }
+
+  #first {
+    margin-right: 90px;
+  }
+  #second {
+    margin-right: 45px;
+  }
+
+  .testimonblock {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .testimonial {
+    max-width: 284px;
+    padding: 30px 33px 5px 33px;
+  }
+
+  #colton,
+  #irene,
+  #anne {
+    height: 200px;
+  }
+
+  #irene {
+    margin-top: 20px;
+  }
+
+  #anne {
+    margin-top: 40px;
+  }
+}
+
+.attribution {
+  display: none;
+}
